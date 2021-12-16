@@ -1,0 +1,226 @@
+body{
+    font-family: 'Karla', sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("http://unsplash.it/1200x800") center center no-repeat;
+  background-size: cover;
+}
+.bg-img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #002f4b05, #15803e59);
+  opacity: 0.6;
+  height: 100%;
+}
+.text-color-main{
+  color: #15803e;
+}
+.logo-title{
+    color: #15803e;
+    font-family: 'Lobster', cursive;
+    font-weight:500;
+    letter-spacing: 2px;
+    font-size:25px;
+    padding-left: 40px !important;
+    margin-right: 10px;
+}
+.text-color-bg{
+    background-color: #15803e;
+  }
+.btn-base{
+    background: #15803e;
+    color: white;
+    text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 20px;
+    font-weight: 700;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 5px 10px;
+}
+.logo-small{
+    height: 30px;
+    width: 30px;
+    margin: 5px 5px;
+}
+.inline-block{
+    display: inline-block;
+}
+.table{
+    display: table;
+    margin: auto;
+}
+.vertical-align{
+    vertical-align: middle;
+    display: table-cell;
+}
+.nav-text {
+    padding: 0 20px
+}
+.tabs{
+    background: #15803e12;
+    /* margin: 5px; */
+    border-radius: 15px;
+    font-weight: bold;
+}
+.tabs .tab a{
+    color:#15803e;
+} /*Black color to the text*/
+
+.tabs .tab a:hover {
+    background-color:white;
+    color:#15803e;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+    background-color:#15803e;
+    color:white;
+} /*Background and text color when a tab is active*/
+.tabs .tab a:focus.active{
+    background-color:#15803e;
+    color:white;
+} /*Background and text color when a tab is active*/
+.tabs .indicator {
+    background-color:white;
+}
+.input-field .prefix.right{
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .input-field .prefix.active{
+    color:#15803e;
+  }
+  .btn-large-override{
+    width: 25%;
+    margin-right: 10px;
+  }
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #15803e transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  a {
+      color: #15803e ;
+  }
+  .text-bold{
+      font-weight: bold;
+  }
+
+  .flip {
+    position: relative;
+  }
+  .flip > .front,
+  .flip > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+  }
+  .flip > .front {
+    transform: rotateY(0deg);
+  }
+  .flip > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+  }
+  .flip:hover > .front {
+    transform: rotateY(180deg);
+  }
+  .flip:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  .flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+  }
+  .flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+  }
+  .flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+  }
+  
+  .flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+  }
+  .flip > .front,
+  .flip > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+  }
+  .flip > .front p,
+  .flip > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+  }
+  
+  .text-shadow {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+  }
